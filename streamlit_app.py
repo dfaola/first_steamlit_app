@@ -24,7 +24,7 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 streamlit.dataframe(fruits_to_show)
 
 # insert syntax
-my_cur.execute("insert into fruit_load_list values ('test streamlit')")
+my_cur.execute("insert into fruit_load_list values ('orange')")
 
 
 streamlit.header("Fruityvice Fruit Advice!")
