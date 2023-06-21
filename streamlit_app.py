@@ -23,6 +23,9 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 # Display the table on the page.
 streamlit.dataframe(fruits_to_show)
 
+# insert syntax
+my_cur.execute("insert into fruit_load_list values ('test streamlit')")
+
 
 streamlit.header("Fruityvice Fruit Advice!")
 fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
@@ -54,3 +57,5 @@ streamlit.dataframe(my_data_rows)
 
 add_my_fruit = streamlit.text_input('What fruit would you like to add?','jackfruit')
 streamlit.write('Thanks for adding ', add_my_fruit)
+
+my_cur.execute("insert into fruit_load_list values ('from streamlit')")
